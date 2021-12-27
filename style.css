@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.blue-block {
+    background-color: #5c7e99;
+    padding-left: 25px;
+    padding-right: 10px;
+}
+
+.blue-block h2 {
+    color: white;
+    text-align: right;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+.sky-block {
+    background-color: rgb(183, 236, 236);
+}
+
+.content {
+    display: flex;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.content-item {
+    width: 50%;
+}
