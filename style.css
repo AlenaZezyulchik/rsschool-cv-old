@@ -3,31 +3,77 @@
     margin: 0;
 }
 
+header {
+    text-align: center;
+}
+
+.rs {
+    width: 50px;
+}
+
 .blue-block {
     background-color: #5c7e99;
     padding-left: 25px;
     padding-right: 10px;
 }
 
-.blue-block h2 {
+.blue-block h1 {
     color: white;
     text-align: right;
 }
 
+h1,
 h2 {
     font-size: 48px;
 }
 
 .sky-block {
     background-color: rgb(183, 236, 236);
+    padding-left: 10px;
+}
+
+.sky-block h2 {
+    color: white;
+    text-align: left;
 }
 
 .content {
     display: flex;
     width: 1280px;
     margin: 0 auto;
+    color: white;
 }
 
 .content-item {
     width: 50%;
+    padding-top: 30px;
+}
+
+.my-photo {
+    background-image: url("https://sun9-68.userapi.com/impf/c855324/v855324951/7520a/WO6MZGfPPYM.jpg?size=1080x715&quality=96&sign=e4d0825ade9d2aca5fdab6e4dfd10063&type=album");
+    background-size: cover;
+    background-position: center;
+    width: 331px;
+    height: 331px;
+    border-radius: 50%;
+    margin: 20px auto 0;
+}
+
+.contacts {
+    margin: 20px auto 0;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+.about-myself,
+.skills,
+h3 {
+    margin: 20px;
+    text-align: justify;
+}
+
+footer {
+    text-align: center;
 }
