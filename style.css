@@ -60,11 +60,16 @@ h2 {
 }
 
 .contacts {
-    margin: 20px auto 0;
+    margin: 20px 0 0 180px;
 }
 
 ul {
     list-style-type: circle;
+}
+
+.link-my-project {
+    text-decoration: none;
+    color: white;
 }
 
 .about-myself,
