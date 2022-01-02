@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+}
+
+.rs {
+    width: 50px;
+}
+
+.green-block {
+    background-color: #20662c;
+    padding-left: 25px;
+    padding-right: 10px;
+}
+
+.green-block h1 {
+    color: rgb(234, 194, 238);
+    text-align: right;
+}
+
+h1,
+h2 {
+    font-size: 48px;
+}
+
+.purple-block {
+    background-color: rgb(234, 194, 238);
+    padding-left: 10px;
+    color: rgb(24, 93, 24);
+}
+
+.purple-block h2 {
+    color: rgb(24, 93, 24);
+    text-align: left;
+}
+
+.content {
+    display: flex;
+    width: 1280px;
+    margin: 0 auto;
+    color: rgb(234, 194, 238);
+}
+
+.content-item {
+    width: 50%;
+    padding-top: 30px;
+}
+
+.my-photo {
+    background-image: url("https://sun9-68.userapi.com/impf/c855324/v855324951/7520a/WO6MZGfPPYM.jpg?size=1080x715&quality=96&sign=e4d0825ade9d2aca5fdab6e4dfd10063&type=album");
+    background-size: cover;
+    background-position: center;
+    width: 331px;
+    height: 331px;
+    border-radius: 50%;
+    margin: 20px auto 0;
+}
+
+.contacts {
+    margin: 20px 0 0 180px;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+.link-my-project {
+    text-decoration: none;
+    color: rgb(24, 93, 24);
+}
+
+.about-myself,
+.skills,
+h3 {
+    margin: 20px;
+    text-align: justify;
+}
+
+footer {
+    text-align: center;
+}
