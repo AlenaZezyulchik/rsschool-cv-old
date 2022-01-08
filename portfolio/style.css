@@ -66,4 +66,34 @@ header {
 .hero {
     min-height: 910px;
     background-image: url("./images/bg.jpg");
+    padding: 250px 0 0 80px;
+}
+
+.name-photographer {
+    max-width: 500px;
+    padding-right: 30px;
+}
+
+.hero h1 {
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 120px;
+}
+
+.sub-title {
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.7px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+.wrapper-button-hire input {
+    width: 220px;
+    height: 55px;
+    background-color: #BDAE82;
+    font-size: 20px;
+    line-height: 40px;
 }
