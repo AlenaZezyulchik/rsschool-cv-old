@@ -1,99 +1,175 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    font-family: 'Inter', sans-serif;
-    color: #FFFFFF;
-}
-
-a {
-    text-decoration: none;
-    color: #FFFFFF;
-    ;
-}
-
-ul {
-    list-style-type: none;
-}
-
-.wrapper {
-    width: 1440px;
-    margin: 0 auto;
-    position: relative;
-}
-
-header {
-    position: absolute;
-    width: 100%;
-}
-
-.header-content {
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.menu-wrapper {
-    display: flex;
-    column-gap: 31px;
-}
-
-.menu-header {
-    display: flex;
-    column-gap: 30px;
-}
-
-.menu-header-item a {
-    font-size: 20px;
-    line-height: 50px;
-}
-
-.menu-header-item a:hover,
-.language-item:hover {
-    color: #BDAE82;
-    cursor: pointer;
-}
-
-.switch-languages {
-    display: flex;
-    font-size: 20px;
-    line-height: 50px;
-    column-gap: 9px;
-}
-
-.hero {
-    min-height: 910px;
-    background-image: url("./images/bg.jpg");
-    padding: 250px 0 0 80px;
-}
-
-.name-photographer {
-    max-width: 500px;
-    padding-right: 30px;
-}
-
-.hero h1 {
-    font-family: 'Merriweather', serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 60px;
-    line-height: 120px;
-}
-
-.sub-title {
-    font-size: 20px;
-    line-height: 40px;
-    letter-spacing: 0.7px;
-    margin-bottom: 25px;
-    margin-top: 10px;
-}
-
-.wrapper-button-hire input {
-    width: 220px;
-    height: 55px;
-    background-color: #BDAE82;
-    font-size: 20px;
-    line-height: 40px;
-}
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    html {
+        font-family: 'Inter', sans-serif;
+        color: #FFFFFF;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #FFFFFF;
+        ;
+    }
+    
+    ul {
+        list-style-type: none;
+    }
+    
+    .wrapper {
+        width: 1440px;
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    header {
+        position: absolute;
+        width: 100%;
+    }
+    
+    .header-content {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .menu-wrapper {
+        display: flex;
+        column-gap: 31px;
+    }
+    
+    .menu-header {
+        display: flex;
+        column-gap: 30px;
+    }
+    
+    .menu-header-item a {
+        font-size: 20px;
+        line-height: 50px;
+    }
+    
+    .menu-header-item a:hover,
+    .language-item:hover {
+        color: #BDAE82;
+        cursor: pointer;
+    }
+    
+    .switch-languages {
+        display: flex;
+        font-size: 20px;
+        line-height: 50px;
+        column-gap: 9px;
+    }
+    
+    .hero {
+        min-height: 910px;
+        background-image: url("./images/bg.jpg");
+        padding: 250px 0 0 80px;
+    }
+    
+    .name-photographer {
+        max-width: 500px;
+        padding-right: 30px;
+    }
+    
+    .hero h1 {
+        font-family: 'Merriweather', serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 120px;
+    }
+    
+    .sub-title {
+        font-size: 20px;
+        line-height: 40px;
+        letter-spacing: 0.7px;
+        margin-bottom: 25px;
+        margin-top: 10px;
+    }
+    
+    .wrapper-button-hire input {
+        width: 220px;
+        height: 55px;
+        background-color: #BDAE82;
+        font-size: 20px;
+        line-height: 40px;
+    }
+    
+    .skills {
+        height: 482px;
+        background-color: black;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        padding-top: 100px;
+    }
+    
+    .line-skill-line {
+        margin-bottom: 33px;
+    }
+    
+    .line-skill-line,
+    .line-portfolio-line {
+        display: flex;
+        column-gap: 20px;
+        align-items: center;
+    }
+    
+    h2 {
+        font-family: Merriweather;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 80px;
+        color: #BDAE82;
+    }
+    
+    hr {
+        background: #BDAE82;
+        height: 2px;
+        width: 294px;
+    }
+    
+    .skills-items {
+        display: flex;
+        column-gap: 40px;
+        padding-top: 27px;
+        padding-bottom: 2px;
+    }
+    
+    .digital-photography,
+    .video-shothing,
+    .retouch,
+    .audio {
+        max-width: 280px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .skills-title {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    
+    h3 {
+        font-family: Inter;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 40px;
+        text-align: center;
+    }
+    
+    .skills-subtitle {
+        text-align: center;
+        font-family: Inter;
+        font-size: 18px;
+        line-height: 36px;
+    }
+    
+    .portfolio {
+        height: 1500px;
+        background-color: black;
+    }
