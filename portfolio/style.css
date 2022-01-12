@@ -18,6 +18,10 @@ ul {
     list-style-type: none;
 }
 
+div {
+    box-sizing: border-box;
+}
+
 .wrapper {
     width: 1440px;
     margin: 0 auto;
@@ -90,7 +94,7 @@ header {
     margin-top: 10px;
 }
 
-.wrapper-button-hire input {
+.wrapper-button-hire button {
     width: 220px;
     height: 55px;
     background-color: #BDAE82;
@@ -240,7 +244,7 @@ h3 {
 }
 
 .price {
-    padding-top: 100px;
+    padding: 100px 20px;
 }
 
 .line-price-line hr {
@@ -267,6 +271,7 @@ h3 {
 .gold {
     border: 3px solid #BDAE82;
     padding-top: 43px;
+    max-width: 450px;
 }
 
 .money {
@@ -276,4 +281,40 @@ h3 {
     line-height: 48px;
     margin-top: 20px;
     text-align: center;
+}
+
+.money span {
+    color: #BDAE82;
+}
+
+.included-in-package {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.included-in-package li {
+    font-family: Inter;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.button-order-shooting {
+    color: #BDAE82;
+    width: 220px;
+    height: 55px;
+    margin: 40px 115px 43px;
+}
+
+.button-order-shooting button {
+    font-family: Inter;
+    font-size: 20px;
+    color: black;
+    width: 220px;
+    height: 55px;
+    border: none;
+    background-color: #BDAE82;
+}
+
+.button-order-shooting button:hover {
+    cursor: pointer;
 }
