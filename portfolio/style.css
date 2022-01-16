@@ -318,3 +318,62 @@ h3 {
 .button-order-shooting button:hover {
     cursor: pointer;
 }
+
+.wrapper-contacts {
+    background-color: black;
+    background-image: url("./images/contacts.jpg");
+    display: flex;
+    justify-content: flex-end;
+    padding: 60px 20px 195px;
+}
+
+.contacts {
+    width: 450px;
+}
+
+.contacts-title h3 {
+    text-align: left;
+    color: #BDAE82;
+    font-size: 40px;
+    line-height: 80px;
+    font-family: Merriweather;
+    font-weight: bold;
+}
+
+.contact-item {
+    background: transparent;
+    border: none;
+    border: 2px solid #BDAE82;
+    width: 450px;
+    height: 50px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.contact-item::placeholder {
+    font-family: Inter;
+    font-size: 20px;
+    line-height: 40px;
+    color: #BDAE82;
+}
+
+.contact-phone {
+    margin: 20px 0;
+}
+
+.contact-textarea {
+    height: 100px;
+}
+
+.contact-button {
+    background-color: #BDAE82;
+    font-family: Inter;
+    font-size: 20px;
+    line-height: 40px;
+    padding: 8px 40px;
+    margin-top: 30px;
+}
+
+.contact-button:hover {
+    cursor: pointer;
+}
