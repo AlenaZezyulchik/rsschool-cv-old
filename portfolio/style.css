@@ -6,6 +6,11 @@
 html {
     font-family: 'Inter', sans-serif;
     color: #FFFFFF;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
 }
 
 a {
@@ -100,6 +105,11 @@ header {
     background-color: #BDAE82;
     font-size: 20px;
     line-height: 40px;
+}
+
+.wrapper-button-hire button:hover {
+    background-color: #bdae82e1;
+    cursor: pointer;
 }
 
 .skills,
@@ -317,6 +327,7 @@ h3 {
 
 .button-order-shooting button:hover {
     cursor: pointer;
+    background-color: #bdae82e1;
 }
 
 .wrapper-contacts {
@@ -331,7 +342,7 @@ h3 {
     width: 450px;
 }
 
-.contacts-title h3 {
+.contacts-title h2 {
     text-align: left;
     color: #BDAE82;
     font-size: 40px;
@@ -376,4 +387,32 @@ h3 {
 
 .contact-button:hover {
     cursor: pointer;
+    background-color: #bdae82e1;
+}
+
+footer {
+    background-color: black;
+    padding: 50px 20px;
+}
+
+.wrapper-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper-footer,
+.link-school {
+    font-family: Inter;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.footer-data {
+    display: flex;
+    column-gap: 20px;
+}
+
+.social-list {
+    display: flex;
+    column-gap: 30px;
 }
