@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #E5E5E5;
+    background-color: #FFFFFF;
 }
 
 .wrapper {
@@ -151,7 +151,7 @@ h1 {
 }
 
 .steps_content {
-    margin-top: 334px;
+    margin: 334px auto 0;
     text-align: center;
 }
 
@@ -161,6 +161,11 @@ h2 {
     font-weight: 500;
     font-size: 40px;
     color: #F2785C;
+}
+
+.steps_content {
+    height: 247px;
+    max-width: 1177px;
 }
 
 .steps_content_items {
@@ -197,6 +202,93 @@ h2 {
     font-weight: 400;
     font-size: 20px;
     color: #0D606F;
+}
+
+.destinations {
+    width: 100%;
+    overflow: hidden;
+}
+
+.destinations_content {
+    margin-top: 97px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.destinations_slider {
+    margin-top: 46px;
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+}
+
+.destinations_slider_spain,
+.destinations_slider_japan,
+.destinations_slider_usa {
+    position: relative;
+}
+
+.destinations_slider img {
+    border-radius: 16px;
+}
+
+.destinations_slider_text {
+    position: absolute;
+    text-align: left;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    color: #FFFFFF;
+    left: calc(50% - 108px/2 - 331px);
+    top: calc(50% - 42px/2 + 339px);
+}
+
+.destinations_circles {
+    margin-top: 24px;
+    display: flex;
+    gap: 10px;
+}
+
+.circle_1,
+.circle_2,
+.circle_3 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.circle_1,
+.circle_3 {
+    background: rgba(242, 120, 92, 0.5);
+}
+
+.circle_2 {
+    background: #F2785C;
+}
+
+.destinations_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 32px;
+    gap: 10px;
+    width: 228px;
+    height: 59px;
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.destinations_button_text {
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #FFFFFF;
 }
 
 @font-face {
