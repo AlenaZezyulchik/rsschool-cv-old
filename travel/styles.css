@@ -291,6 +291,58 @@ h2 {
     color: #FFFFFF;
 }
 
+.stories_content {
+    margin: 80px auto 0;
+    text-align: center;
+}
+
+.stories_content_items {
+    margin-top: 40px;
+    padding-left: 120px;
+    padding-top: 40px;
+    padding-right: 125px;
+    display: flex;
+    flex-direction: column;
+    background: url(./images/stories.jpg);
+    gap: 30px;
+}
+
+.stories_content_item {
+    display: flex;
+}
+
+.stories_content_photo {
+    width: 400px;
+    height: 250px;
+    background: url(robin-noguier-sydwCr54rf0-unsplash.jpg);
+    filter: drop-shadow(0px 4px 4px #0D606F);
+}
+
+.stories_content_photo img {
+    border-radius: 16px;
+}
+
+h3 {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    color: #0D606F;
+}
+
+.stories_description_block {
+    margin-left: 40px;
+}
+
+.stories_desctiption_text {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #0D606F;
+    margin-top: 24px;
+}
+
 @font-face {
     font-family: "Magra";
     font-style: normal;
