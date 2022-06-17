@@ -128,15 +128,15 @@ h1 {
 }
 
 .preview_content_button {
-    width: 228px;
-    height: 59px;
     margin-right: 18px;
     margin-left: auto;
     margin-top: 18px;
     margin-bottom: 254px;
 }
 
-.preview_content_button button {
+.preview_content_button button,
+.destinations_button button,
+.stories_button button {
     font-family: 'Red Hat Text';
     font-style: normal;
     font-weight: 500;
@@ -241,12 +241,12 @@ h2 {
     font-weight: 500;
     font-size: 32px;
     color: #FFFFFF;
-    left: calc(50% - 108px/2 - 331px);
-    top: calc(50% - 42px/2 + 339px);
+    left: 15px;
+    bottom: 43px;
 }
 
 .destinations_circles {
-    margin-top: 24px;
+    margin-top: 20px;
     display: flex;
     gap: 10px;
 }
@@ -268,27 +268,22 @@ h2 {
     background: #F2785C;
 }
 
-.destinations_button {
+.destinations_button,
+.stories_button {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 10px 32px;
-    gap: 10px;
-    width: 228px;
-    height: 59px;
-    background: #0D606F;
-    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
-    border-radius: 10px;
     margin-top: 40px;
 }
 
-.destinations_button_text {
-    font-family: 'Red Hat Text';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    color: #FFFFFF;
+.button {
+    width: 228px;
+    height: 59px;
+}
+
+.destinations_button img,
+.stories_button img {
+    margin-right: 12.5px;
 }
 
 .stories_content {
@@ -303,8 +298,19 @@ h2 {
     padding-right: 125px;
     display: flex;
     flex-direction: column;
-    background: url(./images/stories.jpg);
+    background-image: url(./images/stories.jpg);
     gap: 30px;
+    position: relative;
+}
+
+.stories_content_items::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .stories_content_item {
@@ -332,6 +338,7 @@ h3 {
 
 .stories_description_block {
     margin-left: 40px;
+    filter: drop-shadow(0px 0px 0px #0D606F);
 }
 
 .stories_desctiption_text {
@@ -341,6 +348,15 @@ h3 {
     font-size: 20px;
     color: #0D606F;
     margin-top: 24px;
+}
+
+.stories_button {
+    filter: drop-shadow(0px 0px 0px #0D606F);
+}
+
+span {
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 @font-face {
