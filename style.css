@@ -3,8 +3,41 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    width: 100%;
+}
+
 header {
-    text-align: center;
+    background-color: rgb(234, 194, 238);
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+
+.navigation li {
+    color: rgb(24, 93, 24);
+    font-size: 20px;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+a:link {
+    color: rgb(232, 151, 239);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(24, 93, 24);
+    text-decoration: underline;
+    text-decoration: none;
 }
 
 .rs {
@@ -40,7 +73,6 @@ h2 {
 
 .content {
     display: flex;
-    width: 1280px;
     margin: 0 auto;
     color: rgb(234, 194, 238);
 }
