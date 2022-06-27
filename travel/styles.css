@@ -101,6 +101,8 @@ a:hover {
 
 .preview {
     background-image: url(./images/main_background.jpg);
+    height: 765px;
+    margin-bottom: 80px;
 }
 
 .preview_content {
@@ -168,7 +170,7 @@ h1 {
 }
 
 .steps_content {
-    margin: 334px auto 0;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -420,6 +422,17 @@ footer {
     font-weight: 500;
     font-size: 16px;
     color: white;
+}
+
+.footer_links_rs_git {
+    display: flex;
+    gap: 19px;
+    position: absolute;
+    left: 20px;
+}
+
+.footer_links_rs_git img {
+    height: 30px;
 }
 
 .footer_links_to_social_networks {
