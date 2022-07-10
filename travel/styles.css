@@ -427,8 +427,7 @@ h3 {
 }
 .stories_button {
     filter: drop-shadow(0px 0px 0px #0D606F);
-    margin-top: 10px;
-    margin-bottom: 41px;
+    margin: 10px auto 41px auto;
 }
 
 
@@ -674,8 +673,8 @@ display: none;
     .menu_adaptive_burger {
         display: block;
         position: fixed;
-        margin-top: 43px;
-        margin-left: 335px;
+        top: 43px;
+        right: 20px;
         z-index:30;
         overflow: hidden;
     }
@@ -742,7 +741,26 @@ display: none;
     }
     .steps_content_items {
     margin-top: 22px;
+    padding: 0px 15px;
     }
+    .steps_content_item {
+        max-width: 27%;
+    }
+
+    .item_bike {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .item_calendar {
+        white-space: nowrap;
+    }
+
+    .item_plain {
+        align-items: flex-end;
+        text-align: right;
+    }
+
     .steps_content_text {
     font-size: 10px;
     margin-top: 20px;

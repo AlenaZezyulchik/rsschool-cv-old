@@ -4,7 +4,7 @@ let menuAdaptiveBurger = document.querySelector('.menu_adaptive_burger');
 let menuAdaptiveClose = document.querySelector('.menu_adaptive_close');
 let burgerMenuOverlay = document.querySelector('.burger_menu_overlay')
 let menuHeaderItem = document.querySelectorAll('.menu_header_item');
-let menuHeaderAdaptive = document.querySelectorAll('menu_header_adaptive');
+let menuHeaderAdaptive = document.querySelectorAll('.menu_header_adaptive');
 
 menuAdaptiveBurger.addEventListener('click', function(){
 	menuWrapper.classList.add('active');
