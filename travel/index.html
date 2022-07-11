@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Travel</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Red+Hat+Text:wght@500&display=swap" rel="stylesheet">
@@ -34,16 +34,30 @@
                                 <a href="#planyoutrip">Plan Your Trip</a>
                             </li>
                             <li class="menu_header_item">
-                                <a href="#destinations">Destinations</a></li>
+                                <a href="#destinations">Destinations</a>
+                            </li>
                             <li class="menu_header_item">
                                 <a href="#travelstories">Travel Stories</a>
                             </li>
+                            <li class="menu_header_adaptive">
+                                <a href="">Account</a>
+                            </li>
+                            <li class="menu_header_adaptive">
+                              <a href="#socialmedia">Social media</a>  
+                            </li>
                         </ul>
                     </nav>
+                    <div class="menu_adaptive_close">
+                        <img src="./images/X.svg" alt="X">
+                    </div>
                 </div>
                 <div class="Login_pop_up">
                     <button class="button">Login</button>
                 </div>
+                <div class="menu_adaptive_burger">
+                    <img src="./images/menu_burger.svg" alt="menu">
+                </div>
+                <div class="burger_menu_overlay"></div>
             </div>
         </header>
 
@@ -57,7 +71,7 @@
                     </div>
                     <div class="preview_content_text_box">
                         <div class="preview_content_text">
-                            What would you like to do?
+                            <input type="text" value="What would you like to do?">
                         </div>
                         <div class="preview_content_button">
                             <button class="button">Start Planning</button>
@@ -71,25 +85,28 @@
                 <div class="steps_content">
                     <h2>3 STEPS TO THE PERFECT TRIP</h2>
                     <div class="steps_content_items">
-                        <div class=steps_content_item>
+                        <div class="steps_content_item item_bike">
                             <div class="steps_content_item_bike">
                                 <img class="bike" src="./images/bike.svg" alt="bike">
+                                <img class="steps_content_item_adaptive " src="./images/bike_adaptive.svg" alt="bike">
                             </div>
                             <div class="steps_content_text">
                                 Tell us what you want to do
                             </div>
                         </div>
-                        <div class="steps_content_item">
+                        <div class="steps_content_item item_calendar">
                             <div class="steps_content_item_calendar">
                                 <img class="calendar" src="./images/calendar.svg" alt="calendar">
+                                <img class="steps_content_item_adaptive" src="./images/calendar_adaptive.svg" alt="calendar">
                             </div>
                             <div class="steps_content_text">
                                 Share us preferable dates
                             </div>
                         </div>
-                        <div class="steps_content_item">
+                        <div class="steps_content_item item_plain">
                             <div class="steps_content_item_plain">
                                 <img class="plain" src="./images/plain.svg" alt="plain">
+                                <img class="steps_content_item_adaptive" src="./images/plain_adaptive.svg" alt="plain">
                             </div>
                             <div class="steps_content_text">
                                 We will give you recommendations
@@ -104,31 +121,39 @@
                     <h2>POPULAR DESTINATIONS</h2>
                     <div class="destinations_slider">
                         <div class="destinations_slider_spain">
-                            <img src="./images/spain.jpg" alt="spain">
+                            <img class="destinations_slider_original" src="./images/spain.jpg" alt="spain">
+                            <img class="destinations_slider_adaptive" src="./images/spain_adaptive.jpg" alt="spain">
                             <div class="destinations_slider_text">SPAIN</div>
                         </div>
                         <div class="destinations_slider_japan">
-                            <img src="./images/japan.jpg" alt="japan">
+                            <img class="destinations_slider_original" src="./images/japan.jpg" alt="japan">
+                            <img class="destinations_slider_adaptive" src="./images/japan_adaptive.jpg" alt="japan">
                             <div class="destinations_slider_text">JAPAN</div>
                         </div>
                         <div class="destinations_slider_usa">
-                            <img src="./images/USA.jpg" alt="usa">
+                            <img class="destinations_slider_original" src="./images/USA.jpg" alt="usa">
+                            <img class="destinations_slider_adaptive" src="./images/USA_adaptive.jpg" alt="usa">
                             <div class="destinations_slider_text">USA</div>
+                        </div>
+                        <div class="slider_arrows">
+                            <div class="slider_arrow left">
+                                <img src="./images/slider_arrow_left.svg" alt="left">
+                            </div>
+                            <div class="slider_arrow right">
+                                <img src="./images/slider_arrow_right.svg" alt="right">
+                            </div>
                         </div>
                     </div>
                     <div class="destinations_circles">
                         <div class="circle_1">
-
                         </div>
                         <div class="circle_2">
-
                         </div>
                         <div class="circle_3">
-
                         </div>
                     </div>
                     <div class="destinations_button">
-                        <button class="button"><img src="./images/arrow-right.svg" alt="arrow">Find More</button>
+                        <button class="button"><img class="arrow" src="./images/arrow-right.svg" alt="arrow"> <img class="arrow_adaptive" src="./images/arrow-right_small.svg" alt="arrow"> Find More</button>
                     </div>
                 </div>
             </section>
@@ -141,58 +166,62 @@
                     <div class="stories_content_items">
                         <div class="stories_content_item">
                             <div class="stories_content_photo">
-                                <img src="./images/story_1.jpg" alt="story">
+                                <img class= "stories_content_photo_img" src="./images/story_1.jpg" alt="story">
+                                <img class= "stories_content_photo_adaptive" src="./images/story_1_adaptive.jpg" alt="story">
                             </div>
                             <div class="stories_description_block">
                                 <h3>10 Photos of Attractive Thailand</h3>
                                 <div class="stories_desctiption_text">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit... <span>Read More</span>
+                                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla<span class="stories_text_close"> pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span>.Lorem ipsum dolor sit a<span class="stories_text_close">met,
+                                        consectetur adipiscing elit</span>... <a href="#">Read More</a>
                                 </div>
                             </div>
                         </div>
                         <div class="stories_content_item">
                             <div class="stories_content_photo">
-                                <img src="./images/story_2.jpg" alt="story">
+                                <img class= "stories_content_photo_img" src="./images/story_2.jpg" alt="story">
+                                <img class= "stories_content_photo_adaptive" src="./images/story_2_adaptive.jpg" alt="story">
                             </div>
                             <div class="stories_description_block">
                                 <h3>Canyonlands National Park, Utah</h3>
                                 <div class="stories_desctiption_text">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit... <span>Read More</span>
+                                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla<span class="stories_text_close"> pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span>.Lorem ipsum dolor sit a<span class="stories_text_close">met,
+                                        consectetur adipiscing elit</span>... <a href="#">Read More</a>
                                 </div>
                             </div>
                         </div>
                         <div class="stories_content_item">
                             <div class="stories_content_photo">
-                                <img src="./images/story_3.jpg" alt="story">
+                                <img class= "stories_content_photo_img" src="./images/story_3.jpg" alt="story">
+                                <img class= "stories_content_photo_adaptive" src="./images/story_3_adaptive.jpg" alt="story">
                             </div>
                             <div class="stories_description_block">
                                 <h3>I left my heart in the Mountains!</h3>
                                 <div class="stories_desctiption_text">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit... <span>Read More</span>
+                                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla<span class="stories_text_close"> pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span>.Lorem ipsum dolor sit a<span class="stories_text_close">met,
+                                        consectetur adipiscing elit</span>... <a href="#">Read More</a>
                                 </div>
                             </div>
                         </div>
                         <div class="stories_content_item">
                             <div class="stories_content_photo">
-                                <img src="./images/story_4.jpg" alt="story">
+                                <img class= "stories_content_photo_img" src="./images/story_4.jpg" alt="story">
+                                <img class= "stories_content_photo_adaptive" src="./images/story_4_adaptive.jpg" alt="story">
                             </div>
                             <div class="stories_description_block">
                                 <h3>The Longest journey in my life!</h3>
                                 <div class="stories_desctiption_text">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit... <span>Read More</span>
+                                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla<span class="stories_text_close"> pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span>.Lorem ipsum dolor sit a<span class="stories_text_close">met,
+                                        consectetur adipiscing elit</span>... <a href="#">Read More</a>
                                 </div>
                             </div>
                         </div>
                         <div class="stories_button">
-                            <button class="button"><img src="./images/arrow-right.svg" alt="arrow">See More</button>
+                            <button class="button"><img class="arrow" src="./images/arrow-right.svg" alt="arrow"><img class="arrow_adaptive" src="./images/arrow-right_small.svg" alt="arrow">See More</button>
                         </div>
                     </div>
                 </div>
@@ -211,6 +240,7 @@
                 </ul>
                 <div class="footer_content_text">All Rights Reserved © Travel Portal</div>
                 <ul class="footer_links_to_social_networks">
+                    <a id="socialmedia"></a>
                     <li>
                         <a href="https://www.instagram.com"><img src="./images/instadram.svg" alt="instadram"></a>
                     </li>
