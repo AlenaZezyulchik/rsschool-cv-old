@@ -403,7 +403,7 @@ h3 {
     font-family: 'Aleo';
     font-style: normal;
     font-weight: 400;
-    font-size: 35px;span
+    font-size: 35px;
     color: #0D606F;
 }
 
@@ -661,13 +661,14 @@ display: none;
       background: #F2785C;
       border-radius: 10px;
       display: block;
-      transform: translateX(260%);
-      transition: transform 0.5s; 
+      top: 0;
+      right: -200px;
+      transition: all 0.5s; 
       z-index: 30;
       overflow: auto;
     }
     .menu_wrapper.active {
-        transform: translateX(160%);
+        right: -40px;
     }
 
     .menu_adaptive_burger {
@@ -858,9 +859,7 @@ display: none;
     }
 
 }
-
-
-
+    
 
 @font-face {
     font-family: "Magra";
