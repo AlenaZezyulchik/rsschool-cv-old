@@ -25,6 +25,185 @@ div {
     box-sizing: border-box;
 }
 
+.wrapper_login,
+.wrapper_create_account {
+    max-width: 650px;
+    width: 100vw;
+    padding: 25px 45px 23px;
+    background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    margin-top: 100px;
+    z-index: 30;
+    display: none;
+}
+
+.wrapper_login.active {
+    display: block;
+}
+
+.wrapper_create_account {
+    display: none;
+}
+
+.wrapper_create_account.active {
+    display: block;
+}
+
+.login_content {
+    max-width: 560px;
+}
+
+.login_content_title {
+    text-align: center;
+}
+
+.login_content_title span {
+    font-family: 'Aleo';
+    font-weight: 700;
+    font-size: 32px;
+    color: rgba(13, 96, 111, 1);
+}
+
+.wrapper_login button,
+.wrapper_create_account button {
+    width: 100%;
+    font-family: 'Red Hat Text';
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+}
+
+.buttons_sign_in_with {
+    margin-top: 30px;
+}
+
+.button_sing_in_img {
+    margin-right: 20px;
+}
+
+.sign_in_with.facebook {
+    background-color: rgba(24, 119, 242, 1);
+}
+
+.sign_in_with.google {
+    margin-top: 20px;
+    color: rgba(13, 96, 111, 1);
+}
+
+.login_content_hr {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    padding-top: 30px;
+}
+
+.login_content_hr hr {
+    color: rgba(13, 96, 111, 0.5);
+}
+
+.hr {
+    width: 46%;
+}
+
+.login_content_hr span {
+    font-family: 'Aleo';
+    font-weight: 700;
+    font-size: 20px;
+    color: rgba(13, 96, 111, 0.5);
+}
+
+.login_content {
+    max-width: 560px;
+}
+
+.inputs_sign_in {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.block_input input {
+    width: 100%;
+    height: 54px;
+    border-radius: 3px;
+    border: none;
+    margin-top: 5px;
+    box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08), inset 0px 2px 3px rgba(13, 96, 111, 0.16);
+    font-family: 'Aleo';
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.block_input_text {
+    font-family: 'Aleo';
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(13, 96, 111, 1);
+}
+
+.block_input.password {
+    margin-top: 20px;
+}
+
+.inputs_sign_in .block_button {
+    margin-top: 25px;
+}
+
+.block_button button {
+    background-color: rgba(13, 96, 111, 1);
+}
+
+.block_input_text.text_center {
+    margin-top: 10px;
+    text-align: center;
+    color: rgba(13, 96, 111, 0.5);
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+}
+
+.inputs_sign_in a {
+    text-decoration: underline;
+    font-family: 'Aleo';
+    font-weight: 700;
+    font-size: 15px;
+    color: rgba(13, 96, 111, 1);
+}
+
+.block_input_line {
+    margin: 26px auto 20px;
+}
+
+.overlay_login {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1d1e26;
+    opacity: 0.7;
+    z-index: 27;
+    display: none;
+}
+
+.overlay_login.active {
+    display: block;
+}
+
+.wrapper_reg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
 ul {
     list-style-type: none;
 }
@@ -60,6 +239,7 @@ header {
     font-size: 16px;
     line-height: 21px;
 }
+
 .menu_adaptive_burger {
     display: none;
 }
@@ -67,6 +247,7 @@ header {
 .menu_adaptive_close {
     display: none;
 }
+
 .burger_menu_overlay {
     display: none;
     position: fixed;
@@ -75,12 +256,11 @@ header {
     width: 100vw;
     height: 100vh;
     z-index: 20;
-
 }
+
 .burger_menu_overlay.active {
     display: block;
 }
-
 
 a {
     color: #FFFFFF;
@@ -172,7 +352,7 @@ h1 {
 }
 
 .preview_content_button {
-    margin-left:auto;
+    margin-left: auto;
 }
 
 .preview_content_button button,
@@ -207,7 +387,6 @@ h2 {
     font-size: 40px;
     color: #F2785C;
 }
-
 
 .steps_content_items {
     margin-top: 40px;
@@ -275,15 +454,19 @@ h2 {
     gap: 60px;
     justify-content: space-between;
 }
+
 .destinations_slider.active_left {
-transform: translate(920px, 0);
+    transform: translate(920px, 0);
 }
+
 .destinations_slider.active_center {
     transform: translate(0, 0);
-    }
+}
+
 .destinations_slider.active_right {
     transform: translate(-800px, 0);
-    }
+}
+
 .wrapper_slider {
     position: relative;
 }
@@ -295,6 +478,7 @@ transform: translate(920px, 0);
 .destinations_slider_adaptive {
     display: none;
 }
+
 .destinations_slider_image {
     position: relative;
 }
@@ -328,11 +512,9 @@ transform: translate(920px, 0);
     background: rgba(242, 120, 92, 0.5);
 }
 
-
 .circle.active_dot {
     background: #F2785C;
 }
-
 
 .button {
     cursor: pointer;
@@ -342,7 +524,7 @@ transform: translate(920px, 0);
     background-color: #6fa5af;
 }
 
-.button.active {
+.button:active {
     background-color: #243c3e;
     box-shadow: 0 2px #666;
     transform: translateY(2px);
@@ -359,6 +541,10 @@ transform: translate(920px, 0);
 
 .arrow_adaptive {
     display: none;
+}
+
+.left {
+    transform: rotate(-180deg);
 }
 
 .stories_content {
@@ -400,6 +586,7 @@ transform: translate(920px, 0);
     background: url(robin-noguier-sydwCr54rf0-unsplash.jpg);
     filter: drop-shadow(0px 4px 4px #0D606F);
 }
+
 .stories_content_photo_adaptive {
     display: none;
 }
@@ -429,17 +616,17 @@ h3 {
     color: #0D606F;
     margin-top: 24px;
 }
+
 .stories_desctiption_text a {
     font-weight: bold;
     text-decoration: underline;
     color: #0D606F;
 }
+
 .stories_button {
     filter: drop-shadow(0px 0px 0px #0D606F);
     margin: 10px auto 41px auto;
 }
-
-
 
 footer {
     position: absolute;
@@ -485,7 +672,7 @@ footer {
     display: none;
 }
 
-@media (max-width: 1320px){
+@media (max-width: 1320px) {
     .Login_pop_up button {
         margin: 25px auto;
     }
@@ -495,68 +682,66 @@ footer {
     .menu_header {
         margin-left: 40px;
     }
-  
     .stories_content_items {
         padding-left: 20px;
         padding-right: 20px;
     }
-    
 }
 
 @media (max-width: 1045px) {
     body {
         background: no-repeat;
     }
-.logo_wrapper {
-    margin-left: 50px;
-}
-.portal {
-    font-size: 20px;
-    line-height: 25px;
-}
-.menu_header {
-    column-gap: 30px;
-    font-size: 14px;
-}
-h1 {
-    font-size: 60px;
-}
-.preview_content {
-    width: 90%;
-    margin-left: 30px;
-}
-.preview_content_item {
-    font-size: 15px;
-}
-.preview_content_text_box {
-    width: 100%;
-}
-.preview_content_text input{
-    font-size: 20px;
-}
-h2 {
-    font-size: 30px;
-}
-h3 {
-    font-size: 20px;
-}
-.steps_content_text {
-    font-size: 15px;
+    .logo_wrapper {
+        margin-left: 50px;
+    }
+    .portal {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .menu_header {
+        column-gap: 30px;
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    .preview_content {
+        width: 90%;
+        margin-left: 30px;
+    }
+    .preview_content_item {
+        font-size: 15px;
+    }
+    .preview_content_text_box {
+        width: 100%;
+    }
+    .preview_content_text input {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    .steps_content_text {
+        font-size: 15px;
+    }
+    .stories_desctiption_text {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .preview_content_button button,
+    .destinations_button button,
+    .stories_button button {
+        width: 170px;
+        height: 50px;
+        font-size: 20px;
+    }
 }
 
-.stories_desctiption_text {
-    font-size: 15px;
-    margin-top: 10px;
-}
-.preview_content_button button, .destinations_button button, .stories_button button{
-    width: 170px;
-    height: 50px;
-    font-size: 20px;
-}
-
-}
-
-@media (max-width: 825px){
+@media (max-width: 825px) {
     .wrapper {
         max-width: 825px;
     }
@@ -566,126 +751,122 @@ h3 {
     }
     .preview {
         padding-bottom: 130px;
-
     }
     h1 {
         font-size: 50px;
         line-height: 60px;
     }
-    .preview_content_text input{
-        font-size: 15px;;
+    .preview_content_text input {
+        font-size: 15px;
+        ;
     }
-    .preview_content_button button, .destinations_button button, .stories_button button{
+    .preview_content_button button,
+    .destinations_button button,
+    .stories_button button {
         width: 120px;
         height: 50px;
         font-size: 12px;
     }
-  
-  .stories_content_photo_img {
-    display: none;
-  }
-  .stories_content_photo_adaptive {
-    display: block;
-  }
-  .stories_description_block {
-    margin-left: 10px;
+    .stories_content_photo_img {
+        display: none;
+    }
+    .stories_content_photo_adaptive {
+        display: block;
+    }
+    .stories_description_block {
+        margin-left: 10px;
+    }
+    .footer_links_to_social_networks {
+        right: 10px;
+    }
 }
 
-  .footer_links_to_social_networks {
-    right: 10px;
-  }
-}
-
-@media (max-width: 523px){
+@media (max-width: 523px) {
     .menu_header {
         margin-top: 15px;
-  } 
-  .portal {
-    display: none;
+    }
+    .portal {
+        display: none;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .preview_content_text input {
+        font-size: 14px;
+        line-height: 17px;
+        padding-left: 16px;
+        padding-top: 16px;
+    }
+    .arrow {
+        display: none;
+    }
+    .arrow_adaptive {
+        display: block;
+    }
+    .steps_content_item_adaptive {
+        display: block;
+    }
+    .bike,
+    .calendar,
+    .plain {
+        display: none;
+    }
+    .steps_content_item_bike,
+    .steps_content_item_calendar,
+    .steps_content_item_plain {
+        width: 70px;
+        height: 70px;
+    }
+    .stories_desctiption_text {
+        font-size: 12px;
+    }
+    .stories_content_photo_adaptive img {
+        float: left;
+    }
+    .footer_content_text {
+        display: none;
+    }
+    .footer_links_rs_git {
+        display: none;
+    }
+    .footer_links_to_social_networks {
+        position: relative;
+    }
 }
 
-h2 {
-    font-size: 20px;
-}
-.preview_content_text input{
-    font-size: 14px;
-    line-height: 17px;
-    padding-left: 16px;
-    padding-top: 16px;
-}
-
-.arrow {
-    display: none;
-}
-.arrow_adaptive {
-    display: block;
-}
-.steps_content_item_adaptive {
-    display: block;
-}
-.bike, .calendar, .plain {
-display: none;
-}
-.steps_content_item_bike,
-.steps_content_item_calendar,
-.steps_content_item_plain {
-    width: 70px;
-    height: 70px;
-}
-
-.stories_desctiption_text {
-    font-size: 12px;
-}
-.stories_content_photo_adaptive img{
-    float: left;
-}
-  .footer_content_text {
-    display: none;
-  }
-  .footer_links_rs_git {
-    display: none;
-  }
-  .footer_links_to_social_networks {
-    position: relative;
-  }
-}
-
-@media (max-width: 390px){
+@media (max-width: 390px) {
     .wrapper {
         max-width: 390px;
     }
-   
     .Login_pop_up {
         display: none;
     }
     header {
         box-shadow: none;
-        background: linear-gradient(180deg, rgba(13, 96, 111, 1), rgba(13, 96, 111, 0) );
+        background: linear-gradient(180deg, rgba(13, 96, 111, 1), rgba(13, 96, 111, 0));
         z-index: 20;
     }
-
-     .menu_wrapper {
+    .menu_wrapper {
         position: fixed;
         padding: 44px 15px 20px 44px;
-      background: #F2785C;
-      border-radius: 10px;
-      display: block;
-      top: 0;
-      right: -200px;
-      transition: all 0.5s; 
-      z-index: 30;
-      overflow: auto;
+        background: #F2785C;
+        border-radius: 10px;
+        display: block;
+        top: 0;
+        right: -200px;
+        transition: all 0.5s;
+        z-index: 30;
+        overflow: auto;
     }
     .menu_wrapper.active {
         right: -40px;
     }
-
     .menu_adaptive_burger {
         display: block;
         position: fixed;
         top: 43px;
         right: 20px;
-        z-index:30;
+        z-index: 30;
         overflow: hidden;
     }
     .menu_adaptive_close {
@@ -698,13 +879,12 @@ display: none;
         flex-direction: column;
         margin: 0;
     }
-  
     .menu_header_adaptive {
         display: block;
     }
     .menu_header li {
-   margin-bottom: 10px;
-   text-align: right;
+        margin-bottom: 10px;
+        text-align: right;
     }
     .logo_wrapper {
         margin-top: 45px;
@@ -736,13 +916,12 @@ display: none;
         padding-left: 0;
     }
     .preview_content_button button,
-.destinations_button button,
-.stories_button button {
-    font-size: 11px;
-    width: 92px;
-    height: 30px;
-}
-
+    .destinations_button button,
+    .stories_button button {
+        font-size: 11px;
+        width: 92px;
+        height: 30px;
+    }
     .steps_content {
         margin-top: 20px;
     }
@@ -750,30 +929,26 @@ display: none;
         font-size: 14px;
     }
     .steps_content_items {
-    margin-top: 22px;
-    padding: 0px 15px;
+        margin-top: 22px;
+        padding: 0px 15px;
     }
     .steps_content_item {
         max-width: 27%;
     }
-
     .item_bike {
         align-items: flex-start;
         text-align: left;
     }
-
     .item_calendar {
         white-space: nowrap;
     }
-
     .item_plain {
         align-items: flex-end;
         text-align: right;
     }
-
     .steps_content_text {
-    font-size: 10px;
-    margin-top: 20px;
+        font-size: 10px;
+        margin-top: 20px;
     }
     .destinations_content {
         margin-top: 20px;
@@ -798,17 +973,15 @@ display: none;
         display: flex;
         justify-content: center;
     }
-   
     .destinations_slider.active_left {
         transform: translate(420px, 0);
-        }
-        .destinations_slider.active_center {
-            transform: translate(0, 0);
-            }
-        .destinations_slider.active_right {
-            transform: translate(-420px, 0);
-            }
-
+    }
+    .destinations_slider.active_center {
+        transform: translate(0, 0);
+    }
+    .destinations_slider.active_right {
+        transform: translate(-420px, 0);
+    }
     .destinations_slider_text {
         font-size: 20px;
         left: 15px;
@@ -822,31 +995,30 @@ display: none;
     }
     .slider_arrow.left {
         position: absolute;
-    left: 25px;
-    top: 115px;
+        left: 25px;
+        top: 115px;
     }
     .slider_arrow.right {
         position: absolute;
-    right: 25px;
-    top: 115px;
+        right: 25px;
+        top: 115px;
     }
     .destinations_circles {
         gap: 6px;
         margin-top: -20px;
         z-index: 10;
-        }
+    }
     .circle {
         width: 8px;
         height: 8px;
     }
-
     .destinations_button {
         margin-top: 22px;
     }
-    .destinations_button img, .stories_button img {
+    .destinations_button img,
+    .stories_button img {
         margin-right: 6px;
     }
-
     .stories_content {
         margin-top: 20px;
     }
@@ -863,7 +1035,6 @@ display: none;
         padding-top: 10px;
         gap: 15px;
     }
-    
     h3 {
         font-weight: 700;
         font-size: 11px;
@@ -876,15 +1047,12 @@ display: none;
         display: none;
     }
     .stories_button {
-
         margin: -4px auto 13px auto;
     }
     .footer_links_to_social_networks {
         right: 6px;
     }
-
 }
-    
 
 @font-face {
     font-family: "Magra";
